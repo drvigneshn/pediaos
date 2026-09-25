@@ -1,9 +1,9 @@
 # pediaos.com
 
-Website for **PediaOS** — paediatric clinical tools by Dr Vignesh N.
+Personal website of **Dr Vignesh N**, Pediatrician — profile, publications, awards, and PediaOS (Code Blue Companion).
 Static HTML, no build step. Served by GitHub Pages from `main` (root) at https://pediaos.com.
 
-- `index.html` — home page (tools, for hospitals, about)
+- `index.html` — single-page profile site (about, experience, skills, publications, awards, PediaOS, contact)
 - `404.html` — not-found page
 - `icon.svg` — PediaOS logo; `img/` — Code Blue Companion icon + screenshots
 - `CNAME` — `pediaos.com`
