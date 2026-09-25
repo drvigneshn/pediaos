@@ -16,11 +16,12 @@
 <meta property="og:description" content="Pediatrician trained at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. Publications, awards, and Code Blue Companion — a PALS decision-support app.">
 <meta property="og:url" content="https://pediaos.com/">
 <meta property="og:type" content="profile">
+<meta property="og:image" content="https://pediaos.com/img/vignesh.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Dr Vignesh N","jobTitle":"Pediatrician","url":"https://pediaos.com/",
+{"@context":"https://schema.org","@type":"Person","name":"Dr Vignesh N","jobTitle":"Pediatrician","url":"https://pediaos.com/","image":"https://pediaos.com/img/vignesh.jpg",
  "alumniOf":[{"@type":"Organization","name":"Kanchi Kamakoti CHILDS Trust Hospital"},{"@type":"CollegeOrUniversity","name":"Rajah Muthiah Medical College, Annamalai University"}],
  "award":["Medshark Champion Award, ANBAI National Conclave 2026","Gold Medal in Pediatrics, MBBS","Gold Medal in Surgery, MBBS"],
  "memberOf":{"@type":"Organization","name":"Indian Academy of Pediatrics"}}
@@ -85,9 +86,8 @@
 
   .idcard{background:var(--surface); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); padding:28px; position:relative; overflow:hidden;}
   .idcard::before{content:""; position:absolute; inset:0 0 auto 0; height:96px; background:linear-gradient(120deg, var(--teal), var(--brand));}
-  .avatar{position:relative; width:112px; height:112px; border-radius:50%; background:linear-gradient(140deg, var(--teal), var(--brand));
-    border:5px solid var(--surface); display:flex; align-items:center; justify-content:center; margin-top:28px;
-    color:var(--brand-ink); font-family:Fraunces,Georgia,serif; font-size:40px; font-weight:700;}
+  .avatar{position:relative; display:block; width:140px; height:140px; border-radius:50%; object-fit:cover;
+    border:5px solid var(--surface); margin-top:18px; background:var(--surface2); box-shadow:0 6px 20px rgba(0,0,0,.18);}
   .idcard .nm{font-family:Fraunces,Georgia,serif; font-size:22px; font-weight:700; margin-top:12px;}
   .idcard .rl{color:var(--dim); font-size:14px;}
   .facts{list-style:none; margin-top:18px; display:grid; gap:10px; font-size:14px;}
@@ -246,7 +246,7 @@
     </div>
 
     <aside class="idcard" aria-label="Profile summary">
-      <div class="avatar" aria-hidden="true">VN</div>
+      <img class="avatar" src="img/vignesh.jpg" alt="Dr Vignesh N" width="140" height="140">
       <div class="nm">Dr Vignesh N</div>
       <div class="rl">Pediatrician &middot; Founder, PediaOS</div>
       <ul class="facts">
