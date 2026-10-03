@@ -188,6 +188,29 @@
   .next .plus{width:40px; height:40px; flex-shrink:0; border-radius:12px; display:flex; align-items:center; justify-content:center;
     background:var(--surface2); font-size:22px; color:var(--ink);}
 
+
+  /* upcoming */
+  .soon-h{display:flex; align-items:center; gap:10px; margin:36px 0 14px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);}
+  .soon-h::after{content:""; flex:1; height:1px; background:var(--line);}
+  .soon{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:860px){ .soon{grid-template-columns:1fr;} }
+  .venture{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:26px; position:relative; overflow:hidden;}
+  .venture::before{content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--vc);}
+  .venture.pals{--vc:var(--teal); --vs:var(--teal-soft);}
+  .venture.er{--vc:var(--accent); --vs:var(--accent-soft);}
+  .vhead{display:flex; align-items:center; gap:14px;}
+  .vicon{width:48px; height:48px; border-radius:14px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:var(--vs); color:var(--vc);}
+  .vicon svg{width:24px; height:24px;}
+  .venture h3{font-size:22px;}
+  .venture .url{font-size:13.5px; color:var(--dim); font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
+  .soon-tag{display:inline-block; font-size:11.5px; font-weight:600; color:var(--vc); background:var(--vs); border-radius:999px; padding:2px 10px; margin-left:4px; vertical-align:middle; font-family:Inter,sans-serif; letter-spacing:0;}
+  .venture p.desc{margin-top:14px; color:var(--dim); font-size:15px;}
+  .venture ul{list-style:none; margin-top:14px; display:grid; gap:8px; font-size:14.5px;}
+  .venture li{display:flex; gap:10px; align-items:flex-start;}
+  .venture li::before{content:""; flex-shrink:0; width:7px; height:7px; margin-top:8px; border-radius:50%; background:var(--vc);}
+  .venture .for{margin-top:16px; padding-top:14px; border-top:1px solid var(--line); font-size:13.5px; color:var(--dim);}
+  .venture .for b{color:var(--ink); font-weight:600;}
+
   /* misc */
   .mini{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
   @media (max-width:860px){ .mini{grid-template-columns:1fr;} }
@@ -430,7 +453,7 @@
 
   <section id="pediaos">
     <div class="sec-head"><span class="kicker">Innovation &middot; PediaOS</span><h2>Tools for the moments that matter</h2>
-      <p>PediaOS is where I build bedside tools for pediatric teams &mdash; fast under pressure, aligned with guidelines, and working offline.</p></div>
+      <p>PediaOS is where I build tools for pediatric teams &mdash; fast under pressure, aligned with guidelines, and working offline. One app is live; two more are on the way.</p></div>
 
     <article class="product">
       <div class="body">
@@ -462,7 +485,38 @@
     </article>
     <div class="next">
       <div class="plus">+</div>
-      <div><b style="color:var(--ink)">For hospitals:</b> institutional logins with saved code logs are available &mdash; <a href="#contact">get in touch</a>. More PediaOS tools are in development.</div>
+      <div><b style="color:var(--ink)">For hospitals:</b> institutional logins with saved code logs are available &mdash; <a href="#contact">get in touch</a>.</div>
+    </div>
+    <div class="soon-h">Coming soon</div>
+    <div class="soon">
+      <article class="venture pals">
+        <div class="vhead">
+          <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
+          <div><h3>PediaOS PALS <span class="soon-tag">Coming soon</span></h3><div class="url">pals.pediaos.com</div></div>
+        </div>
+        <p class="desc">A learning and training space for Pediatric Advanced Life Support &mdash; to help clinicians learn the algorithms before the code, and help instructors teach them.</p>
+        <ul>
+          <li><span>PALS algorithms explained step by step &mdash; cardiac arrest, bradycardia, tachycardia, shock and respiratory failure</span></li>
+          <li><span>Interactive case scenarios and mock codes that unfold in real time</span></li>
+          <li><span>Self-assessment quizzes and rhythm recognition for course preparation</span></li>
+          <li><span>Tools for instructors to run skill stations and debrief teams</span></li>
+        </ul>
+        <div class="for"><b>For:</b> residents, nurses and PALS course candidates &amp; instructors</div>
+      </article>
+      <article class="venture er">
+        <div class="vhead">
+          <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <div><h3>PediaOS ER <span class="soon-tag">Coming soon</span></h3><div class="url">er.pediaos.com</div></div>
+        </div>
+        <p class="desc">A bedside companion for the pediatric emergency room &mdash; for the sick child who is not (yet) in arrest, from triage to stabilisation.</p>
+        <ul>
+          <li><span>Rapid triage and assessment &mdash; Pediatric Assessment Triangle and early warning scores</span></li>
+          <li><span>Step-by-step protocols for common emergencies &mdash; status epilepticus, anaphylaxis, acute asthma, DKA, septic shock</span></li>
+          <li><span>Weight-based drug doses, fluids and infusions in one place</span></li>
+          <li><span>Built to work alongside Code Blue Companion if the child deteriorates</span></li>
+        </ul>
+        <div class="for"><b>For:</b> emergency and pediatric teams in the first hour of care</div>
+      </article>
     </div>
   </section>
 
