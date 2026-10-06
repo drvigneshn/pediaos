@@ -1,253 +1,73 @@
 <!DOCTYPE html>
 <!--
-  pediaos.com — Dr Vignesh N
-  © 2026 Dr Vignesh N. All rights reserved.
+  PediaOS — pediaos.com
+  © 2026 PediaOS. All rights reserved.
 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr Vignesh N — Pediatrician</title>
-<meta name="description" content="Dr Vignesh N — Pediatrician (MBBS, DNB Pediatrics, AFIH), trained at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. Clinical work, publications, awards, and PediaOS — home of Code Blue Companion.">
+<title>PediaOS — Pediatric health-care technology</title>
+<meta name="description" content="PediaOS builds clinical decision-support and training software for pediatric emergency and critical care. Home of Code Blue Companion, a PALS-based pediatric resuscitation app.">
 <link rel="canonical" href="https://pediaos.com/">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0e3b4f">
-<meta property="og:title" content="Dr Vignesh N — Pediatrician">
-<meta property="og:description" content="Pediatrician trained at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. Publications, awards, and Code Blue Companion — a PALS decision-support app.">
+<meta property="og:title" content="PediaOS — Pediatric health-care technology">
+<meta property="og:description" content="Clinical decision-support and training software for pediatric emergency and critical care.">
 <meta property="og:url" content="https://pediaos.com/">
-<meta property="og:type" content="profile">
-<meta property="og:image" content="https://pediaos.com/img/vignesh.jpg">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Dr Vignesh N","jobTitle":"Pediatrician","url":"https://pediaos.com/","image":"https://pediaos.com/img/vignesh.jpg",
- "alumniOf":[{"@type":"Organization","name":"Kanchi Kamakoti CHILDS Trust Hospital"},{"@type":"CollegeOrUniversity","name":"Rajah Muthiah Medical College, Annamalai University"}],
- "award":["Medshark Champion Award, ANBAI National Conclave 2026","Gold Medal in Pediatrics, MBBS","Gold Medal in Surgery, MBBS"],
- "memberOf":{"@type":"Organization","name":"Indian Academy of Pediatrics"}}
+{"@context":"https://schema.org","@type":"Organization","name":"PediaOS","url":"https://pediaos.com/","logo":"https://pediaos.com/icon.svg",
+ "description":"Pediatric health-care technology: clinical decision-support and training software for pediatric emergency and critical care.",
+ "foundingDate":"2026","founder":{"@type":"Person","name":"Dr Vignesh N","jobTitle":"Pediatrician","url":"https://pediaos.com/founder.html"},
+ "address":{"@type":"PostalAddress","addressRegion":"Tamil Nadu","addressCountry":"IN"},
+ "email":"n.vignesh.1996@gmail.com"}
 </script>
 <style>
-  :root{
-    --bg:#f7f5f1; --surface:#ffffff; --surface2:#efece6; --line:#e0dbd2;
-    --ink:#14212b; --dim:#5a6873; --brand:#0e3b4f; --brand-ink:#ffffff;
-    --accent:#e2593a; --accent-soft:#fbe6df; --teal:#1a7f86; --teal-soft:#dff0ef; --gold:#a8720c; --gold-soft:#f6ecd6;
-    --shadow:0 1px 2px rgba(20,33,43,.05), 0 8px 28px rgba(20,33,43,.07);
-  }
-  @media (prefers-color-scheme: dark){
-    :root:not([data-theme="light"]){
-      --bg:#0c151c; --surface:#131f28; --surface2:#1a2934; --line:#263845;
-      --ink:#ecf1f4; --dim:#9aabb7; --brand:#7fc8d4; --brand-ink:#0c151c;
-      --accent:#ff8a6b; --accent-soft:#3a2119; --teal:#5cc3c9; --teal-soft:#15333a; --gold:#e6b04a; --gold-soft:#33280f;
-      --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
-    }
-  }
-  :root[data-theme="dark"]{
-    --bg:#0c151c; --surface:#131f28; --surface2:#1a2934; --line:#263845;
-    --ink:#ecf1f4; --dim:#9aabb7; --brand:#7fc8d4; --brand-ink:#0c151c;
-    --accent:#ff8a6b; --accent-soft:#3a2119; --teal:#5cc3c9; --teal-soft:#15333a; --gold:#e6b04a; --gold-soft:#33280f;
-    --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{scroll-behavior:smooth; scroll-padding-top:72px;}
-  body{background:var(--bg); color:var(--ink); font-family:Inter,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
-    line-height:1.6; -webkit-font-smoothing:antialiased; overflow-x:hidden;}
-  a{color:inherit;}
-  .wrap{max-width:1080px; margin:0 auto; padding:0 16px;}
-  h1,h2,h3{font-family:Fraunces,Georgia,serif; letter-spacing:-.01em; line-height:1.15; text-wrap:balance;}
-
-  /* nav */
-  header.nav{position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--bg) 88%, transparent);
-    backdrop-filter:saturate(1.4) blur(10px); -webkit-backdrop-filter:saturate(1.4) blur(10px); border-bottom:1px solid var(--line);}
-  .nav .wrap{display:flex; align-items:center; justify-content:space-between; height:60px; gap:12px;}
-  .brand{display:flex; align-items:center; gap:10px; text-decoration:none; font-weight:700; font-size:17px; white-space:nowrap;}
-  .brand img{width:30px; height:30px;}
-  .brand b{font-family:Fraunces,Georgia,serif; font-weight:700;}
-  .nav nav{display:flex; align-items:center; gap:20px; font-size:14px; font-weight:500;}
-  .nav nav a{text-decoration:none; color:var(--dim);}
-  .nav nav a:hover{color:var(--ink);}
-  @media (max-width:860px){ .nav nav a:not(.keep){display:none;} }
-
-  .btn{display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:15px; text-decoration:none;
-    padding:12px 20px; border-radius:999px; border:1px solid transparent; transition:transform .15s;}
-  .btn:hover{transform:translateY(-1px);}
-  .btn.primary{background:var(--brand); color:var(--brand-ink);}
-  .btn.ghost{border-color:var(--line); background:var(--surface);}
-  .btn.small{padding:8px 14px; font-size:13.5px;}
-
-  /* hero */
-  .hero{padding-top:64px; padding-bottom:40px; display:grid; grid-template-columns:1.25fr .9fr; gap:48px; align-items:center;}
-  .eyebrow{display:inline-block; font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:14px;}
-  .hero h1{font-size:clamp(38px, 6.4vw, 64px);}
-  .hero .quals{font-size:clamp(15px, 2vw, 17px); font-weight:600; color:var(--teal); margin-top:10px;}
+  .hero{padding-top:64px; display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center;}
+  .hero h1{font-size:clamp(36px, 5.8vw, 60px);}
+  .hero h1 em{font-style:normal; color:var(--teal);}
   .hero p.lead{font-size:clamp(16px, 2.1vw, 18.5px); color:var(--dim); max-width:54ch; margin-top:18px;}
-  .hero .ctas{display:flex; flex-wrap:wrap; gap:12px; margin-top:28px;}
-  .open{display:inline-flex; align-items:center; gap:8px; margin-top:24px; font-size:13.5px; color:var(--dim);}
-  .open .dot{width:9px; height:9px; flex-shrink:0; border-radius:50%; background:#1faa6b; box-shadow:0 0 0 4px color-mix(in srgb, #1faa6b 22%, transparent);}
+  .hero .phone{justify-self:center; width:min(270px, 70vw); height:auto; border-radius:32px; border:8px solid #0b1220; box-shadow:0 24px 60px rgba(14,59,79,.28); transform:rotate(2deg);}
+  @media (max-width:860px){ .hero{grid-template-columns:1fr; padding-top:40px;} .hero .phone{transform:none; width:min(240px,64vw);} }
 
-  .idcard{background:var(--surface); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow); padding:28px; position:relative; overflow:hidden;}
-  .idcard::before{content:""; position:absolute; inset:0 0 auto 0; height:96px; background:linear-gradient(120deg, var(--teal), var(--brand));}
-  .avatar{position:relative; display:block; width:140px; height:140px; border-radius:50%; object-fit:cover;
-    border:5px solid var(--surface); margin-top:18px; background:var(--surface2); box-shadow:0 6px 20px rgba(0,0,0,.18);}
-  .idcard .nm{font-family:Fraunces,Georgia,serif; font-size:22px; font-weight:700; margin-top:12px;}
-  .idcard .rl{color:var(--dim); font-size:14px;}
-  .facts{list-style:none; margin-top:18px; display:grid; gap:10px; font-size:14px;}
-  .facts li{display:flex; gap:10px; align-items:flex-start;}
-  .facts svg{width:18px; height:18px; flex-shrink:0; margin-top:2px; color:var(--teal);}
-  @media (max-width:860px){ .hero{grid-template-columns:1fr; gap:32px; padding-top:40px;} }
+  .trust{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-top:56px;}
+  .trust div{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; font-size:14px; color:var(--dim);}
+  .trust b{display:block; color:var(--ink); font-size:15px;}
+  @media (max-width:760px){ .trust{grid-template-columns:1fr 1fr;} }
 
-  /* stats */
-  .stats{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-top:12px;}
-  .stat{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:20px;}
-  .stat b{display:block; font-family:Fraunces,Georgia,serif; font-size:32px; line-height:1.1; color:var(--teal);}
-  .stat span{font-size:13.5px; color:var(--dim);}
-  @media (max-width:760px){ .stats{grid-template-columns:repeat(2, 1fr);} }
+  .about{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:start;}
+  .about .prose p{font-size:16.5px;}
+  .about .prose p + p{margin-top:14px;}
+  .founder{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; display:grid; gap:14px; justify-items:start;}
+  .founder .row{display:flex; gap:14px; align-items:center;}
+  .founder img{width:72px; height:72px; border-radius:50%; object-fit:cover;}
+  .founder .nm{font-family:Fraunces,Georgia,serif; font-weight:700; font-size:19px;}
+  .founder .rl{font-size:13.5px; color:var(--dim);}
+  .founder p{font-size:14.5px; color:var(--dim);}
+  @media (max-width:860px){ .about{grid-template-columns:1fr;} }
 
-  section{padding:64px 0 16px;}
-  .sec-head{margin-bottom:28px; max-width:62ch;}
-  .sec-head .kicker{font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent);}
-  .sec-head h2{font-size:clamp(28px, 4vw, 40px); margin-top:6px;}
-  .sec-head p{color:var(--dim); margin-top:10px;}
-
-  .prose{max-width:70ch; font-size:17px;}
-  .prose p + p{margin-top:14px;}
-
-  /* timeline */
-  .cols{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
-  @media (max-width:860px){ .cols{grid-template-columns:1fr; gap:28px;} }
-  .colh{font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--dim); margin-bottom:16px;}
-  .tl{list-style:none; position:relative; padding-left:26px;}
-  .tl::before{content:""; position:absolute; left:6px; top:8px; bottom:8px; width:2px; background:var(--line);}
-  .tl > li{position:relative; padding-bottom:26px;}
-  .tl > li:last-child{padding-bottom:0;}
-  .tl > li::before{content:""; position:absolute; left:-26px; top:6px; width:14px; height:14px; border-radius:50%;
-    background:var(--surface); border:3px solid var(--teal);}
-  .tl .when{font-size:13px; font-weight:600; color:var(--teal);}
-  .tl h3{font-family:Inter,sans-serif; font-size:16.5px; font-weight:700; letter-spacing:0; margin-top:2px;}
-  .tl .where{color:var(--dim); font-size:14.5px;}
-  .tl ul{margin:8px 0 0 18px; font-size:14.5px; color:var(--dim); display:grid; gap:4px;}
-
-  /* skills */
-  .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
-  @media (max-width:860px){ .grid3{grid-template-columns:1fr;} }
-  .card{background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:22px;}
-  .card h3{font-size:18px;}
-  .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;}
-  .chip{font-size:13.5px; background:var(--surface2); border-radius:999px; padding:5px 12px;}
-  .rot{margin-top:16px; font-size:14.5px; color:var(--dim);}
-  .rot b{color:var(--ink); font-weight:600;}
-
-  /* publications */
-  .pubs{display:grid; gap:12px;}
-  .pub{display:grid; grid-template-columns:64px 1fr auto; gap:16px; align-items:center; background:var(--surface);
-    border:1px solid var(--line); border-radius:16px; padding:16px 18px; text-decoration:none;}
-  a.pub:hover{border-color:var(--teal);}
-  .pub .yr{font-family:Fraunces,Georgia,serif; font-size:20px; font-weight:700; color:var(--teal);}
-  .pub .t{font-weight:600; font-size:15.5px; line-height:1.4;}
-  .pub .j{font-size:13.5px; color:var(--dim); margin-top:2px; font-style:italic;}
-  .pub .go{font-size:13px; font-weight:600; color:var(--teal); white-space:nowrap;}
-  @media (max-width:640px){ .pub{grid-template-columns:1fr; gap:4px;} .pub .go{margin-top:6px;} }
-  .confs{margin-top:28px;}
-  .conf-list{list-style:none; display:grid; grid-template-columns:repeat(2, 1fr); gap:10px;}
-  .conf-list li{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:12px 16px; font-size:14.5px;}
-  .conf-list li span{display:block; font-size:13px; color:var(--dim);}
-  @media (max-width:640px){ .conf-list{grid-template-columns:1fr;} }
-
-  /* awards */
-  .awards{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
-  @media (max-width:860px){ .awards{grid-template-columns:1fr;} }
-  .award{background:var(--surface); border:1px solid var(--line); border-top:4px solid var(--gold); border-radius:18px; padding:22px;}
-  .award .medal{width:42px; height:42px; border-radius:12px; background:var(--gold-soft); display:flex; align-items:center; justify-content:center; font-size:22px;}
-  .award h3{font-size:18px; margin-top:12px;}
-  .award p{font-size:14px; color:var(--dim); margin-top:6px;}
-  .award.wide{grid-column:1 / -1;}
-
-  /* product */
-  .product{background:var(--surface); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow);
-    display:grid; grid-template-columns:1.05fr .95fr; overflow:hidden;}
-  .product .body{padding:34px;}
-  .ptitle{display:flex; align-items:center; gap:14px;}
-  .ptitle img{width:52px; height:52px; border-radius:13px;}
-  .ptitle h3{font-size:25px;}
-  .ptitle .url{font-size:13.5px; color:var(--dim);}
-  .tag{display:inline-block; font-size:11.5px; font-weight:600; color:var(--teal); background:var(--teal-soft);
-    border-radius:999px; padding:2px 10px; margin-left:4px; vertical-align:middle; font-family:Inter,sans-serif; letter-spacing:0;}
-  .product p.desc{margin-top:16px; color:var(--dim);}
-  .product blockquote{margin-top:16px; border-left:3px solid var(--accent); padding-left:14px; font-size:15px; font-style:italic;}
-  .feats{list-style:none; margin-top:18px; display:grid; gap:10px;}
-  .feats li{display:flex; gap:12px; align-items:flex-start; font-size:14.5px;}
-  .feats li::before{content:""; flex-shrink:0; width:8px; height:8px; margin-top:8px; border-radius:50%; background:var(--accent);}
-  .feats b{font-weight:600;}
-  .product .ctas{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
-  .product .shots{background:linear-gradient(160deg, color-mix(in srgb, var(--teal) 18%, var(--surface2)), var(--surface2));
-    display:flex; align-items:center; justify-content:center; gap:14px; padding:36px 20px; min-width:0;}
-  .shots img{width:31%; max-width:170px; height:auto; border-radius:18px; box-shadow:0 12px 30px rgba(0,0,0,.22); border:4px solid #0b1220;}
-  .shots img:nth-child(2){transform:translateY(-18px);}
-  @media (max-width:860px){ .product{grid-template-columns:1fr;} .product .body{padding:24px 20px;} }
-  .next{margin-top:16px; display:flex; align-items:center; gap:14px; padding:18px 20px; border:1px dashed var(--line);
-    border-radius:18px; color:var(--dim); font-size:14.5px;}
-  .next .plus{width:40px; height:40px; flex-shrink:0; border-radius:12px; display:flex; align-items:center; justify-content:center;
-    background:var(--surface2); font-size:22px; color:var(--ink);}
-
-
-  /* upcoming */
-  .soon-h{display:flex; align-items:center; gap:10px; margin:36px 0 14px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.08em; color:var(--dim);}
-  .soon-h::after{content:""; flex:1; height:1px; background:var(--line);}
-  .soon{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
-  @media (max-width:860px){ .soon{grid-template-columns:1fr;} }
-  .venture{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:26px; position:relative; overflow:hidden;}
-  .venture::before{content:""; position:absolute; inset:0 0 auto 0; height:4px; background:var(--vc);}
-  .venture.pals{--vc:var(--teal); --vs:var(--teal-soft);}
-  .venture.er{--vc:var(--accent); --vs:var(--accent-soft);}
-  .vhead{display:flex; align-items:center; gap:14px;}
-  .vicon{width:48px; height:48px; border-radius:14px; flex-shrink:0; display:flex; align-items:center; justify-content:center; background:var(--vs); color:var(--vc);}
-  .vicon svg{width:24px; height:24px;}
-  .venture h3{font-size:22px;}
-  .venture .url{font-size:13.5px; color:var(--dim); font-family:ui-monospace,SFMono-Regular,Menlo,monospace;}
-  .soon-tag{display:inline-block; font-size:11.5px; font-weight:600; color:var(--vc); background:var(--vs); border-radius:999px; padding:2px 10px; margin-left:4px; vertical-align:middle; font-family:Inter,sans-serif; letter-spacing:0;}
-  .venture p.desc{margin-top:14px; color:var(--dim); font-size:15px;}
-  .venture ul{list-style:none; margin-top:14px; display:grid; gap:8px; font-size:14.5px;}
-  .venture li{display:flex; gap:10px; align-items:flex-start;}
-  .venture li::before{content:""; flex-shrink:0; width:7px; height:7px; margin-top:8px; border-radius:50%; background:var(--vc);}
-  .venture .for{margin-top:16px; padding-top:14px; border-top:1px solid var(--line); font-size:13.5px; color:var(--dim);}
-  .venture .for b{color:var(--ink); font-weight:600;}
-
-  /* misc */
-  .mini{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;}
-  @media (max-width:860px){ .mini{grid-template-columns:1fr;} }
-  .mini .card ul{list-style:none; margin-top:12px; display:grid; gap:8px; font-size:14.5px;}
-  .mini .card li{display:flex; gap:10px;}
-  .mini .card li::before{content:"✓"; color:var(--teal); font-weight:700;}
-
-  /* contact */
-  .band{background:var(--brand); color:var(--brand-ink); border-radius:24px; padding:44px 40px; margin:64px 0 0;
-    display:grid; grid-template-columns:1.3fr 1fr; gap:32px; align-items:center;}
-  .band h2{font-size:clamp(26px, 3.8vw, 36px);}
-  .band p{opacity:.85; margin-top:10px;}
-  .band .actions{display:grid; gap:12px;}
-  .band a.big{display:flex; align-items:center; justify-content:space-between; gap:12px; text-decoration:none; font-weight:600;
-    background:color-mix(in srgb, var(--brand-ink) 10%, transparent); border-radius:14px; padding:16px 18px; word-break:break-all;}
-  .band a.big:hover{background:color-mix(in srgb, var(--brand-ink) 16%, transparent);}
-  .band a.big small{display:block; font-weight:500; opacity:.75; font-size:12.5px; word-break:normal;}
-  @media (max-width:860px){ .band{grid-template-columns:1fr; padding:30px 22px;} }
-
-  footer{border-top:1px solid var(--line); padding:32px 0 44px; margin-top:56px; font-size:13px; color:var(--dim);}
-  footer .wrap{display:grid; gap:12px;}
-  footer .links{display:flex; flex-wrap:wrap; gap:18px;}
-  footer .links a{text-decoration:none; font-weight:500;}
-  footer .links a:hover{color:var(--ink);}
+  .org{margin-top:16px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;}
+  .org div{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px 16px;}
+  .org small{display:block; font-size:12px; color:var(--dim); text-transform:uppercase; letter-spacing:.06em; font-weight:600;}
+  .org span{font-size:14.5px; font-weight:500;}
+  @media (max-width:760px){ .org{grid-template-columns:1fr 1fr;} }
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Home"><img src="icon.svg" alt=""><b>Dr Vignesh N</b></a>
+    <a class="brand" href="/" aria-label="PediaOS home"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b></a>
     <nav>
+      <a href="#products">Products</a>
+      <a href="#hospitals">For hospitals</a>
       <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#research">Research</a>
-      <a href="#awards">Awards</a>
-      <a href="#pediaos">PediaOS</a>
+      <a href="founder.html">Founder</a>
       <a class="keep btn primary small" href="#contact">Contact</a>
     </nav>
   </div>
@@ -257,203 +77,27 @@
 
   <div class="hero">
     <div>
-      <span class="eyebrow">Pediatrician &middot; Chennai, India</span>
-      <h1>Dr Vignesh N</h1>
-      <div class="quals">MBBS &middot; DNB Pediatrics &middot; AFIH</div>
-      <p class="lead">Pediatrician trained at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. I care for sick children from the emergency room to the NICU and PICU, write about infectious diseases, teach, and build tools that make pediatric resuscitation faster and safer.</p>
+      <span class="eyebrow">Pediatric health-care technology</span>
+      <h1>Clinical software for the <em>critical minutes</em> of children&rsquo;s care.</h1>
+      <p class="lead">PediaOS builds decision-support and training tools for pediatric emergency and critical care &mdash; so clinicians have the right dose, the right step and the right timing at the bedside, even in the middle of a resuscitation.</p>
       <div class="ctas">
-        <a class="btn primary" href="#contact">Get in touch</a>
-        <a class="btn ghost" href="#pediaos">See Code Blue Companion &rarr;</a>
+        <a class="btn primary" href="#products">Our products</a>
+        <a class="btn ghost" href="#contact">Contact us</a>
       </div>
-      <div class="open"><span class="dot"></span>Open to Registrar / Senior Resident roles in Pediatrics</div>
     </div>
-
-    <aside class="idcard" aria-label="Profile summary">
-      <img class="avatar" src="img/vignesh.jpg" alt="Dr Vignesh N" width="140" height="140">
-      <div class="nm">Dr Vignesh N</div>
-      <div class="rl">Pediatrician &middot; Founder, PediaOS</div>
-      <ul class="facts">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg><span>DNB Pediatrics, KKCTH Chennai (2023&ndash;2026)</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.2 13 7 22l5-3 5 3-1.2-9"/></svg><span>Gold medals in Pediatrics &amp; Surgery, MBBS</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg><span>IAP BLS &amp; PALS &middot; PALS Instructor (monitoring trainee)</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><span>English &middot; Tamil &middot; Hindi</span></li>
-      </ul>
-    </aside>
+    <img class="phone" src="img/cbc-console.png" alt="Code Blue Companion arrest console" width="1080" height="2160">
   </div>
 
-  <div class="stats">
-    <div class="stat"><b>3 yrs</b><span>DNB residency at a tertiary children&rsquo;s hospital</span></div>
-    <div class="stat"><b>2</b><span>MBBS gold medals &mdash; Pediatrics &amp; Surgery</span></div>
-    <div class="stat"><b>4</b><span>Publications, incl. journal papers &amp; a book chapter</span></div>
-    <div class="stat"><b>2026</b><span>Medshark Champion, ANBAI National Conclave</span></div>
+  <div class="trust">
+    <div><b>Clinician-led</b>Founded and built by a practising pediatrician</div>
+    <div><b>Guideline-aligned</b>AHA PALS 2020/2025 &amp; APLS</div>
+    <div><b>Works offline</b>Installable web &amp; Android apps</div>
+    <div><b>Award-winning</b>Medshark Champion, ANBAI 2026</div>
   </div>
 
-  <section id="about">
-    <div class="sec-head"><span class="kicker">About</span><h2>Clinician first, builder second</h2></div>
-    <div class="prose">
-      <p>I completed my DNB in Pediatrics at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. My training covered general pediatric wards and OPD, the pediatric emergency department, six months of NICU and two months of PICU, with postings in nephrology, neurology, gastroenterology, pulmonology, endocrinology, hematology-oncology and infectious diseases.</p>
-      <p>I manage sick children independently, lead resuscitations, and perform the common bedside procedures &mdash; intubation, vascular access and lumbar puncture. I have peer-reviewed publications and a keen interest in teaching.</p>
-      <p>After being part of many pediatric codes, I built <b>Code Blue Companion</b> &mdash; a PALS decision-support app that puts the algorithms and drug doses in one place, so the team can follow them quickly during a resuscitation.</p>
-    </div>
-  </section>
-
-  <section id="experience">
-    <div class="sec-head"><span class="kicker">Experience &amp; education</span><h2>Where I&rsquo;ve trained and worked</h2></div>
-    <div class="cols">
-      <div>
-        <div class="colh">Clinical experience</div>
-        <ul class="tl">
-          <li>
-            <div class="when">2023 &ndash; 2026</div>
-            <h3>DNB Resident, Pediatrics</h3>
-            <div class="where">Kanchi Kamakoti CHILDS Trust Hospital, Chennai</div>
-            <ul>
-              <li>General pediatric wards and the pediatric emergency department</li>
-              <li>Ran the general OPD &mdash; acute illness, chronic follow-up, growth and immunization</li>
-              <li>6 months NICU (incl. 15 days NRP training, IOG, Madras Medical College) and 2 months PICU</li>
-              <li>Subspecialty postings across seven pediatric specialties; teaching junior residents</li>
-            </ul>
-          </li>
-          <li>
-            <div class="when">2022 &ndash; 2023</div>
-            <h3>Duty Medical Officer</h3>
-            <div class="where">Multiple hospitals and clinics</div>
-            <ul>
-              <li>General OPD for adults and children</li>
-              <li>Night and emergency duties, first-line acute care and ward cover</li>
-            </ul>
-          </li>
-          <li>
-            <div class="when">2021</div>
-            <h3>Teleconsultation, COVID-19 second wave</h3>
-            <div class="where">Remote care for home-isolated patients (2 months)</div>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <div class="colh">Education</div>
-        <ul class="tl">
-          <li>
-            <div class="when">2023 &ndash; 2026</div>
-            <h3>DNB Pediatrics</h3>
-            <div class="where">Kanchi Kamakoti CHILDS Trust Hospital, Chennai</div>
-            <ul><li>Thesis on bowel preparation &mdash; submitted and accepted</li></ul>
-          </li>
-          <li>
-            <div class="when">2021 &ndash; 2022</div>
-            <h3>AFIH &mdash; Associate Fellow of Industrial Health</h3>
-            <div class="where">NLC India Ltd.</div>
-          </li>
-          <li>
-            <div class="when">2014 &ndash; 2020</div>
-            <h3>MBBS</h3>
-            <div class="where">Rajah Muthiah Medical College &amp; Hospital, Annamalai University</div>
-            <ul><li>Gold medals in Pediatrics and Surgery</li></ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="sec-head"><span class="kicker">Clinical skills</span><h2>Procedures &amp; competencies</h2></div>
-    <div class="grid3">
-      <div class="card">
-        <h3>Emergency &amp; PICU</h3>
-        <div class="chips">
-          <span class="chip">Endotracheal intubation</span><span class="chip">Bag-mask ventilation</span><span class="chip">Intraosseous access</span>
-          <span class="chip">Arterial line insertion</span><span class="chip">USG-guided line insertion</span><span class="chip">Lumbar puncture</span>
-          <span class="chip">Nasogastric tube</span><span class="chip">Basic ventilator management</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>NICU</h3>
-        <div class="chips">
-          <span class="chip">Neonatal resuscitation (NRP)</span><span class="chip">Umbilical lines (UVC/UAC)</span>
-          <span class="chip">PICC line insertion</span><span class="chip">Phototherapy management</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Hematology-Oncology &amp; digital</h3>
-        <div class="chips">
-          <span class="chip">Bone marrow aspiration &amp; biopsy</span><span class="chip">EMR / HIS workflows</span>
-          <span class="chip">Clinical decision-support design</span>
-        </div>
-      </div>
-    </div>
-    <p class="rot"><b>Subspecialty rotations:</b> Nephrology &middot; Neurology &middot; Gastroenterology &middot; Pulmonology &middot; Endocrinology &middot; Hematology-Oncology &middot; Infectious Diseases</p>
-  </section>
-
-  <section id="research">
-    <div class="sec-head"><span class="kicker">Research &amp; academics</span><h2>Publications</h2></div>
-    <div class="pubs">
-      <a class="pub" href="https://doi.org/10.1097/IPC.0000000000001614" target="_blank" rel="noopener">
-        <div class="yr">2026</div>
-        <div><div class="t">Beyond Typical and Atypical Infectious Diseases in Clinical Practice</div><div class="j">Infectious Diseases in Clinical Practice</div></div>
-        <div class="go">DOI &#8599;</div>
-      </a>
-      <a class="pub" href="https://doi.org/10.1016/j.ijmmb.2025.101040" target="_blank" rel="noopener">
-        <div class="yr">2026</div>
-        <div><div class="t">Scarlet fever: a retrospective case series in the midst of a recent upsurge of cases in India</div><div class="j">Indian Journal of Medical Microbiology</div></div>
-        <div class="go">DOI &#8599;</div>
-      </a>
-      <div class="pub">
-        <div class="yr">2025</div>
-        <div><div class="t">Scarlet Fever &mdash; review article</div><div class="j">Indian Journal of Practical Pediatrics</div></div>
-        <div></div>
-      </div>
-      <div class="pub">
-        <div class="yr">Book</div>
-        <div><div class="t">Otorhinolaryngology (Chapter 19)</div><div class="j">Scott&rsquo;s Pedia-Tricks OSCE &mdash; Paras Medical Books</div></div>
-        <div></div>
-      </div>
-    </div>
-
-    <div class="confs">
-      <div class="colh">Conference presentations &mdash; posters &amp; papers</div>
-      <ul class="conf-list">
-        <li>50th State PEDICON<span>Chennai &middot; August 2026</span></li>
-        <li>NCPR / Rheumatology Conference<span>August 2026</span></li>
-        <li>49th State PEDICON<span>Coimbatore &middot; August 2025</span></li>
-        <li>Pediatric Dermatology Conference<span>September 2024</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="awards">
-    <div class="sec-head"><span class="kicker">Recognition</span><h2>Awards &amp; distinctions</h2></div>
-    <div class="awards">
-      <div class="award">
-        <div class="medal">&#127942;</div>
-        <h3>Medshark Champion Award</h3>
-        <p>ANBAI National Conclave 2026, Bangalore Baptist Hospital, Bengaluru &mdash; Best Pitch, for Code Blue Companion.</p>
-      </div>
-      <div class="award">
-        <div class="medal">&#129351;</div>
-        <h3>Gold Medal in Pediatrics</h3>
-        <p>MBBS, Rajah Muthiah Medical College, Annamalai University.</p>
-      </div>
-      <div class="award">
-        <div class="medal">&#129351;</div>
-        <h3>Gold Medal in Surgery</h3>
-        <p>MBBS, Rajah Muthiah Medical College, Annamalai University.</p>
-      </div>
-      <div class="award wide">
-        <div class="medal">&#127891;</div>
-        <h3>University merit prizes, Final MBBS</h3>
-        <p>Annamalai University (April 2022), received from the then Hon&rsquo;ble Governor of Tamil Nadu: Prof. M. Nataraj Prize, Chidambaram Dr. Palaniswaminathan Prize, Prof. R. Nanjunda Rao Prize, Dr. Venkatesh V Memorial Prize, Dr. Navalar Somasundara Bharathiyar Prize and Cuddalore District IAP Prize.</p>
-      </div>
-      <div class="award wide">
-        <div class="medal">&#129504;</div>
-        <h3>Quizzing</h3>
-        <p>Winner of several intercollegiate, state and national quizzes, including the IAP UG Quiz (zonal level) and IAP PG Quiz (regional level).</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="pediaos">
-    <div class="sec-head"><span class="kicker">Innovation &middot; PediaOS</span><h2>Tools for the moments that matter</h2>
-      <p>PediaOS is where I build tools for pediatric teams &mdash; fast under pressure, aligned with guidelines, and working offline. One app is live; two more are on the way.</p></div>
+  <section id="products">
+    <div class="sec-head"><span class="kicker">Products</span><h2>Tools for pediatric teams</h2>
+      <p>One product is live and in use; two more are in development.</p></div>
 
     <article class="product">
       <div class="body">
@@ -464,13 +108,12 @@
             <div class="url">cbc.pediaos.com</div>
           </div>
         </div>
-        <p class="desc">Pediatric resuscitation decision-support, aligned with AHA PALS 2020/2025 and APLS weight estimates.</p>
-        <blockquote>&ldquo;I started building this in my final year of residency after being part of many pediatric codes.&rdquo;</blockquote>
+        <p class="desc">Pediatric resuscitation decision-support, aligned with AHA PALS 2020/2025 and APLS weight estimates. Enter a weight (or estimate it from age) and every dose is calculated for you.</p>
         <ul class="feats">
-          <li><span><b>Rapid assessment</b> &mdash; tells you if it&rsquo;s an arrest and what to do next.</span></li>
-          <li><span><b>Weight-calculated doses</b> &mdash; arrest drugs, RSI agents, infusions and equipment sizes.</span></li>
+          <li><span><b>Rapid assessment</b> &mdash; tells the team if it&rsquo;s an arrest and what to do next.</span></li>
+          <li><span><b>Weight-calculated doses</b> &mdash; arrest drugs, RSI agents, infusions and equipment sizes, with safe caps.</span></li>
           <li><span><b>Arrest console &amp; timers</b> &mdash; adrenaline, reassessment and shocks cued on time, with voice read-out.</span></li>
-          <li><span><b>Code log</b> &mdash; every action timestamped for debriefing.</span></li>
+          <li><span><b>Code log</b> &mdash; every action timestamped for debriefing and quality improvement.</span></li>
         </ul>
         <div class="ctas">
           <a class="btn primary" href="https://cbc.pediaos.com">Open the app</a>
@@ -483,25 +126,22 @@
         <img src="img/cbc-reference.png" alt="Quick dose reference" width="1080" height="2160" loading="lazy">
       </div>
     </article>
-    <div class="next">
-      <div class="plus">+</div>
-      <div><b style="color:var(--ink)">For hospitals:</b> institutional logins with saved code logs are available &mdash; <a href="#contact">get in touch</a>.</div>
-    </div>
-    <div class="soon-h">Coming soon</div>
-    <div class="soon">
+
+    <div class="soon-h">In development</div>
+    <div class="grid2">
       <article class="venture pals">
         <div class="vhead">
           <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
           <div><h3>PediaOS PALS <span class="soon-tag">Coming soon</span></h3><div class="url">pals.pediaos.com</div></div>
         </div>
-        <p class="desc">A learning and training space for Pediatric Advanced Life Support &mdash; to help clinicians learn the algorithms before the code, and help instructors teach them.</p>
+        <p class="desc">A learning and training platform for Pediatric Advanced Life Support &mdash; helping clinicians learn the algorithms before the code, and helping instructors teach them.</p>
         <ul>
-          <li><span>PALS algorithms explained step by step &mdash; cardiac arrest, bradycardia, tachycardia, shock and respiratory failure</span></li>
+          <li><span>PALS algorithms step by step &mdash; cardiac arrest, bradycardia, tachycardia, shock and respiratory failure</span></li>
           <li><span>Interactive case scenarios and mock codes that unfold in real time</span></li>
           <li><span>Self-assessment quizzes and rhythm recognition for course preparation</span></li>
           <li><span>Tools for instructors to run skill stations and debrief teams</span></li>
         </ul>
-        <div class="for"><b>For:</b> residents, nurses and PALS course candidates &amp; instructors</div>
+        <div class="for"><b>For:</b> residents, nurses, PALS course candidates and instructors</div>
       </article>
       <article class="venture er">
         <div class="vhead">
@@ -520,46 +160,94 @@
     </div>
   </section>
 
-  <section id="more">
-    <div class="sec-head"><span class="kicker">Teaching &amp; memberships</span><h2>Beyond the ward</h2></div>
-    <div class="mini">
+  <section id="approach">
+    <div class="sec-head"><span class="kicker">Our approach</span><h2>Built for the bedside</h2></div>
+    <div class="grid3">
       <div class="card">
-        <h3>Certifications</h3>
-        <ul><li>IAP BLS &amp; PALS trained</li><li>IAP PALS Instructor (monitoring trainee)</li><li>NRP training, IOG, Madras Medical College</li></ul>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Fast under pressure</h3>
+        <p>Big targets, minimal typing, and the next action surfaced before the team has to look for it.</p>
       </div>
       <div class="card">
-        <h3>Teaching</h3>
-        <ul><li>Teaching junior residents on rounds and emergency duties</li><li>Resuscitation education through Code Blue Companion</li></ul>
+        <div class="ic teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></div>
+        <h3>Guideline-aligned &amp; transparent</h3>
+        <p>Built on published pediatric guidelines, with every dose and cap shown so a clinician can verify it.</p>
       </div>
       <div class="card">
-        <h3>Membership</h3>
-        <ul><li>Indian Academy of Pediatrics &mdash; Associate Life Member</li></ul>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+        <h3>Safe by design</h3>
+        <p>Decision support, never a replacement for clinical judgment. No patient identifiers are collected, and data is access-controlled.</p>
       </div>
     </div>
   </section>
 
-  <div id="contact" class="band">
-    <div>
-      <h2>Let&rsquo;s talk</h2>
-      <p>For Registrar or Senior Resident opportunities, academic collaboration, teaching, or bringing Code Blue Companion to your hospital.</p>
+  <section id="hospitals">
+    <div class="band">
+      <div>
+        <h2>For hospitals &amp; institutions</h2>
+        <p>Bring PediaOS tools to your emergency department, PICU, NICU or wards with an institutional licence, so your whole team works from the same tool and its code logs are kept in one place.</p>
+      </div>
+      <ul>
+        <li><b>Institutional access</b><span>One login for your department, with saved code logs for debriefing.</span></li>
+        <li><b>Onboarding &amp; training</b><span>Help getting your team started on the tools.</span></li>
+        <li><b>Emergency access, always</b><span>The resuscitation tools never lock during an emergency.</span></li>
+      </ul>
     </div>
-    <div class="actions">
-      <a class="big" href="mailto:n.vignesh.1996@gmail.com"><span><small>Email</small>n.vignesh.1996@gmail.com</span><span>&rarr;</span></a>
-      <a class="big" href="https://cbc.pediaos.com"><span><small>App</small>Code Blue Companion</span><span>&#8599;</span></a>
+  </section>
+
+  <section id="about">
+    <div class="sec-head"><span class="kicker">About PediaOS</span><h2>Clinician-built technology for children&rsquo;s health</h2></div>
+    <div class="about">
+      <div class="prose">
+        <p>PediaOS is a pediatric health-care technology venture based in Tamil Nadu, India. We design clinical decision-support and training software for the people who care for acutely ill children &mdash; pediatricians, emergency physicians, residents and nurses.</p>
+        <p>PediaOS began in 2026 with Code Blue Companion, built from first-hand experience of pediatric resuscitation: in the first minutes of an arrest, too much depends on memory and mental arithmetic. Our tools take that load off the team, so they can focus on the child.</p>
+        <p>Code Blue Companion won the <b>Medshark Champion Award (Best Pitch)</b> at the ANBAI National Conclave 2026, Bengaluru.</p>
+      </div>
+      <aside class="founder">
+        <div class="row">
+          <img src="img/vignesh.jpg" alt="Dr Vignesh N" width="72" height="72">
+          <div><div class="nm">Dr Vignesh N</div><div class="rl">Founder &middot; Pediatrician (MBBS, DNB Pediatrics)</div></div>
+        </div>
+        <p>Trained at Kanchi Kamakoti CHILDS Trust Hospital, Chennai. IAP PALS instructor (monitoring trainee) with peer-reviewed publications in pediatric infectious diseases.</p>
+        <a class="btn ghost small" href="founder.html">About the founder &rarr;</a>
+      </aside>
     </div>
-  </div>
+    <!-- Organisation details: once registered, add the legal name exactly as on the Udyam / D-U-N-S records,
+         the registered address and a business phone number below, and keep them identical everywhere. -->
+    <div class="org">
+      <div><small>Organisation</small><span>PediaOS</span></div>
+      <div><small>Sector</small><span>Health-care technology (software)</span></div>
+      <div><small>Founder</small><span>Dr Vignesh N</span></div>
+      <div><small>Location</small><span>Tamil Nadu, India</span></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="band">
+      <div>
+        <h2>Contact us</h2>
+        <p>For institutional licences, partnerships, support, or privacy requests, write to us.</p>
+      </div>
+      <div class="actions">
+        <a class="big" href="mailto:n.vignesh.1996@gmail.com"><span><small>Email</small>n.vignesh.1996@gmail.com</span><span>&rarr;</span></a>
+        <a class="big" href="https://cbc.pediaos.com"><span><small>Product</small>Code Blue Companion</span><span>&#8599;</span></a>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="wrap">
+    <div class="fbrand"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b>&nbsp;&middot; Pediatric health-care technology</div>
     <div class="links">
-      <a href="#about">About</a>
-      <a href="#research">Publications</a>
-      <a href="https://cbc.pediaos.com">Code Blue Companion</a>
-      <a href="https://cbc.pediaos.com/privacy.html">App privacy</a>
+      <a href="#products">Products</a>
+      <a href="founder.html">Founder</a>
+      <a href="#contact">Contact</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
     </div>
-    <p>Code Blue Companion is a decision-support aid for trained healthcare professionals; the treating clinician must verify every dose and remains responsible for all decisions.</p>
-    <p>&copy; 2026 Dr Vignesh N. All rights reserved. &ldquo;PediaOS&rdquo; and &ldquo;Code Blue Companion&rdquo; are marks of the author.</p>
+    <p>PediaOS tools are decision-support aids for trained health-care professionals. They assist recall and calculation and do not replace clinical judgment; the treating clinician must verify every dose and remains responsible for all decisions.</p>
+    <p>&copy; 2026 PediaOS. All rights reserved. &ldquo;PediaOS&rdquo; and &ldquo;Code Blue Companion&rdquo; are marks of PediaOS.</p>
   </div>
 </footer>
 
