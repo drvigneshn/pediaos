@@ -1,9 +1,9 @@
 /* PediaOS visit counter — GoatCounter (cookie-free, no personal data).
-   Dashboard: https://pediaos.goatcounter.com  (code "pediaos")
+   Dashboard: https://drvigneshn.goatcounter.com  (code "drvigneshn")
    The footer number appears only once "Allow adding visitor counts on your website"
    is ticked in GoatCounter settings; until then it stays hidden. */
 (function(){
-  var GC = 'https://pediaos.goatcounter.com';
+  var GC = 'https://drvigneshn.goatcounter.com';
   var s = document.createElement('script');
   s.async = true; s.src = 'https://gc.zgo.at/count.js';
   s.setAttribute('data-goatcounter', GC + '/count');
