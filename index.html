@@ -18,7 +18,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"PediaOS","url":"https://pediaos.com/","logo":"https://pediaos.com/icon.svg",
@@ -28,31 +28,31 @@
  "email":"contact@pediaos.com"}
 </script>
 <style>
-  .hero{padding-top:64px; display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center;}
+  .hero{margin-top:24px; padding:56px 52px; border:1px solid var(--line); border-radius:var(--r); display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center; overflow:hidden;}
   .hero h1{font-size:clamp(36px, 5.8vw, 60px);}
   .hero h1 em{font-style:normal; color:var(--teal);}
   .hero p.lead{font-size:clamp(16px, 2.1vw, 18.5px); color:var(--dim); max-width:54ch; margin-top:18px;}
-  .hero .phone{justify-self:center; width:min(270px, 70vw); height:auto; border-radius:32px; border:8px solid #0b1220; box-shadow:0 24px 60px rgba(14,59,79,.28); transform:rotate(2deg);}
-  @media (max-width:860px){ .hero{grid-template-columns:1fr; padding-top:40px;} .hero .phone{transform:none; width:min(240px,64vw);} }
+  .hero .phone{justify-self:center; width:min(250px, 64vw); height:auto; border-radius:28px; border:8px solid #0b1220; box-shadow:0 24px 60px rgba(15,27,45,.28); transform:rotate(-3deg);}
+  @media (max-width:860px){ .hero{grid-template-columns:1fr; padding:32px 20px; margin-top:16px;} .hero .phone{transform:none; width:min(220px,60vw);} }
 
   .trust{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-top:56px;}
-  .trust div{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:16px 18px; font-size:14px; color:var(--dim);}
+  .trust div{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:16px 18px; font-size:14px; color:var(--dim);}
   .trust b{display:block; color:var(--ink); font-size:15px;}
   @media (max-width:760px){ .trust{grid-template-columns:1fr 1fr;} }
 
   .about{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:start;}
   .about .prose p{font-size:16.5px;}
   .about .prose p + p{margin-top:14px;}
-  .founder{background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; display:grid; gap:14px; justify-items:start;}
+  .founder{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); padding:24px; display:grid; gap:14px; justify-items:start;}
   .founder .row{display:flex; gap:14px; align-items:center;}
   .founder img{width:72px; height:72px; border-radius:50%; object-fit:cover;}
-  .founder .nm{font-family:Fraunces,Georgia,serif; font-weight:700; font-size:19px;}
+  .founder .nm{font-family:Sora,Arial,sans-serif; font-weight:700; font-size:19px;}
   .founder .rl{font-size:13.5px; color:var(--dim);}
   .founder p{font-size:14.5px; color:var(--dim);}
   @media (max-width:860px){ .about{grid-template-columns:1fr;} }
 
   .org{margin-top:16px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;}
-  .org div{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:14px 16px;}
+  .org div{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:14px 16px;}
   .org small{display:block; font-size:12px; color:var(--dim); text-transform:uppercase; letter-spacing:.06em; font-weight:600;}
   .org span{font-size:14.5px; font-weight:500;}
   @media (max-width:760px){ .org{grid-template-columns:1fr 1fr;} }
@@ -75,11 +75,11 @@
 
 <main id="top" class="wrap">
 
-  <div class="hero">
+  <div class="hero gridbg">
     <div>
       <span class="eyebrow">Pediatric health-care technology</span>
       <h1>Clinical software for the <em>critical minutes</em> of children&rsquo;s care.</h1>
-      <p class="lead">PediaOS builds decision-support and training tools for pediatric emergency and critical care &mdash; so clinicians have the right dose, the right step and the right timing at the bedside, even in the middle of a resuscitation.</p>
+      <p class="lead">PediaOS builds decision-support and simulation-training tools for pediatric emergency and critical care &mdash; so clinicians have the right dose, the right step and the right timing at the bedside, even in the middle of a resuscitation.</p>
       <div class="ctas">
         <a class="btn primary" href="#products">Our products</a>
         <a class="btn ghost" href="#contact">Contact us</a>
@@ -97,7 +97,7 @@
 
   <section id="products">
     <div class="sec-head"><span class="kicker">Products</span><h2>Tools for pediatric teams</h2>
-      <p>One product is live and in use; two more are in development.</p></div>
+      <p>Three products are live and in use; a fourth is in development. All run in the browser, install to the home screen and work offline.</p></div>
 
     <article class="product">
       <div class="body">
@@ -127,37 +127,53 @@
       </div>
     </article>
 
-    <div class="soon-h">In development</div>
-    <div class="grid2">
-      <article class="venture pals">
-        <div class="vhead">
-          <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></div>
-          <div><h3>PediaOS PALS <span class="soon-tag">Coming soon</span></h3><div class="url">pals.pediaos.com</div></div>
-        </div>
-        <p class="desc">A learning and training platform for Pediatric Advanced Life Support &mdash; helping clinicians learn the algorithms before the code, and helping instructors teach them.</p>
-        <ul>
-          <li><span>PALS algorithms step by step &mdash; cardiac arrest, bradycardia, tachycardia, shock and respiratory failure</span></li>
-          <li><span>Interactive case scenarios and mock codes that unfold in real time</span></li>
-          <li><span>Self-assessment quizzes and rhythm recognition for course preparation</span></li>
-          <li><span>Tools for instructors to run skill stations and debrief teams</span></li>
-        </ul>
-        <div class="for"><b>For:</b> residents, nurses, PALS course candidates and instructors</div>
-      </article>
+    <div class="soon-h">More from PediaOS</div>
+    <div class="grid3">
       <article class="venture er">
         <div class="vhead">
           <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
-          <div><h3>PediaOS ER <span class="soon-tag">Coming soon</span></h3><div class="url">er.pediaos.com</div></div>
+          <div><h3>Pediatric ER Companion</h3><span class="status live">Live</span><span class="url">er.pediaos.com</span></div>
         </div>
-        <p class="desc">A bedside companion for the pediatric emergency room &mdash; for the sick child who is not (yet) in arrest, from triage to stabilisation.</p>
+        <p class="desc">Weight-based protocols for the sick child in the emergency room &mdash; from triage to stabilisation.</p>
         <ul>
-          <li><span>Rapid triage and assessment &mdash; Pediatric Assessment Triangle and early warning scores</span></li>
-          <li><span>Step-by-step protocols for common emergencies &mdash; status epilepticus, anaphylaxis, acute asthma, DKA, septic shock</span></li>
-          <li><span>Weight-based drug doses, fluids and infusions in one place</span></li>
-          <li><span>Built to work alongside Code Blue Companion if the child deteriorates</span></li>
+          <li><span>Step-by-step protocols: status epilepticus, anaphylaxis, DKA, septic and dengue shock, snake bite, poisoning, head injury, burns and more</span></li>
+          <li><span>Doses calculated from weight and capped at the pediatric maximum</span></li>
+          <li><span>Drug library with stock strengths and draw-up volumes</span></li>
+          <li><span>Scores: pediatric GCS, PEWS, PRAM, Westley, WHO dehydration, PECARN</span></li>
         </ul>
-        <div class="for"><b>For:</b> emergency and pediatric teams in the first hour of care</div>
+        <div class="for"><b>For:</b> emergency and pediatric teams</div>
+        <a class="btn ghost small go" href="https://er.pediaos.com">Open ER Companion &rarr;</a>
+      </article>
+      <article class="venture pals">
+        <div class="vhead">
+          <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M5 11h3l2-4 3 7 2-3h4"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <div><h3>PALS Companion</h3><span class="status live">Live</span><span class="url">pals.pediaos.com</span></div>
+        </div>
+        <p class="desc">A simulated pediatric bedside monitor for resuscitation teaching &mdash; shown on a laptop or projector and controlled live from the instructor&rsquo;s phone.</p>
+        <ul>
+          <li><span>Realistic rhythms and physiology &mdash; VF, pVT, PEA, SVT, heart blocks; EtCO<sub>2</sub> that follows CPR quality</span></li>
+          <li><span>12 staged scenarios with instructor-only cues and checklists</span></li>
+          <li><span>Automatic debrief: time to CPR, first shock, adrenaline timing, CPR fraction</span></li>
+          <li><span>Exam mode for skills assessment</span></li>
+        </ul>
+        <div class="for"><b>For:</b> simulation trainers, PALS instructors and teams</div>
+        <a class="btn ghost small go" href="https://pals.pediaos.com">Open PALS Companion &rarr;</a>
+      </article>
+      <article class="venture clinical">
+        <div class="vhead">
+          <div class="vicon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v5a4 4 0 0 0 8 0V3"/><path d="M9 12v3a5 5 0 0 0 10 0v-1"/><circle cx="19" cy="11" r="2.5"/></svg></div>
+          <div><h3>Auscultation Simulator</h3><span class="status soon">Coming soon</span><span class="url">clinical.pediaos.com</span></div>
+        </div>
+        <p class="desc">An interactive auscultation simulator for learning to recognise heart and breath sounds in children.</p>
+        <ul>
+          <li><span>Listen at different chest positions on an interactive patient</span></li>
+          <li><span>Practise recognising normal and abnormal sounds</span></li>
+          <li><span>For bedside teaching, self-study and skills sessions</span></li>
+        </ul>
+        <div class="for"><b>For:</b> medical students, residents and nurses</div>
       </article>
     </div>
+    <p class="fine">PALS Companion and the Auscultation Simulator are for education and simulation only, not for use with real patients. &ldquo;PALS&rdquo; is a programme of the American Heart Association; PediaOS is independent and not affiliated with or endorsed by the AHA.</p>
   </section>
 
   <section id="approach">
