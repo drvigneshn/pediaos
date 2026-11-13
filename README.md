@@ -6,7 +6,9 @@ Static HTML, no build step. Served by GitHub Pages from `main` (root) at https:/
 - `index.html` — company home (products, approach, for hospitals, about, contact)
 - `founder.html` — brief founder profile (Dr Vignesh N)
 - `privacy.html`, `terms.html` — website/company privacy policy and terms of use
-- `styles.css` — shared styles (light/dark tokens)
+- `styles.css` — shared styles (light/dark tokens). Coloured *text* uses `--accent-text` / `--teal-text`
+  (AA contrast in light mode); `--accent` / `--teal` are for fills, rules and icons only.
+- `site.js` — phone menu toggle; `counter.js` — visit counter
 - `404.html`, `icon.svg`, `img/`, `CNAME` (`pediaos.com`)
 
 Products live on subdomains: Code Blue Companion (cbc.pediaos.com, repo `drvigneshn/cbc`),

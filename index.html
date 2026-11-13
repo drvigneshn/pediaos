@@ -11,7 +11,7 @@
 <meta name="description" content="PediaOS builds clinical decision-support and training software for pediatric emergency and critical care. Home of Code Blue Companion, a PALS-based pediatric resuscitation app.">
 <link rel="canonical" href="https://pediaos.com/">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0e3b4f">
+<meta name="theme-color" content="#13294b">
 <meta property="og:title" content="PediaOS — Pediatric health-care technology">
 <meta property="og:description" content="Clinical decision-support and training software for pediatric emergency and critical care.">
 <meta property="og:url" content="https://pediaos.com/">
@@ -30,7 +30,7 @@
 <style>
   .hero{margin-top:24px; padding:56px 52px; border:1px solid var(--line); border-radius:var(--r); display:grid; grid-template-columns:1.15fr .85fr; gap:40px; align-items:center; overflow:hidden;}
   .hero h1{font-size:clamp(36px, 5.8vw, 60px);}
-  .hero h1 em{font-style:normal; color:var(--teal);}
+  .hero h1 em{font-style:normal; color:var(--teal-text);}
   .hero p.lead{font-size:clamp(16px, 2.1vw, 18.5px); color:var(--dim); max-width:54ch; margin-top:18px;}
   .hero .phone{justify-self:center; width:min(250px, 64vw); height:auto; border-radius:28px; border:8px solid #0b1220; box-shadow:0 24px 60px rgba(15,27,45,.28); transform:rotate(-3deg);}
   @media (max-width:860px){ .hero{grid-template-columns:1fr; padding:32px 20px; margin-top:16px;} .hero .phone{transform:none; width:min(220px,60vw);} }
@@ -60,20 +60,24 @@
 </head>
 <body>
 
+<a class="skip" href="#content">Skip to content</a>
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="/" aria-label="PediaOS home"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b></a>
-    <nav>
-      <a href="#products">Products</a>
-      <a href="#hospitals">For hospitals</a>
-      <a href="#about">About</a>
-      <a href="founder.html">Founder</a>
+    <nav aria-label="Main">
+      <div class="navlinks" id="navlinks">
+        <a href="#products">Products</a>
+        <a href="#hospitals">For hospitals</a>
+        <a href="#about">About</a>
+        <a href="founder.html">Founder</a>
+      </div>
       <a class="keep btn primary small" href="#contact">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </nav>
   </div>
 </header>
 
-<main id="top" class="wrap">
+<main id="content" class="wrap">
 
   <div class="hero gridbg">
     <div>
@@ -268,6 +272,7 @@
   </div>
 </footer>
 
+<script src="site.js" defer></script>
 <script src="counter.js" defer></script>
 </body>
 </html>

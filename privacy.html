@@ -7,7 +7,7 @@
 <meta name="description" content="How PediaOS handles information on pediaos.com and in its pediatric health-care apps.">
 <link rel="canonical" href="https://pediaos.com/privacy.html">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0e3b4f">
+<meta name="theme-color" content="#13294b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,21 +15,25 @@
 </head>
 <body>
 
+<a class="skip" href="#content">Skip to content</a>
 <header class="nav">
   <div class="wrap">
     <a class="brand" href="/" aria-label="PediaOS home"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b></a>
-    <nav>
-      <a href="/#products">Products</a>
-      <a href="/#about">About</a>
-      <a href="founder.html">Founder</a>
+    <nav aria-label="Main">
+      <div class="navlinks" id="navlinks">
+        <a href="/#products">Products</a>
+        <a href="/#about">About</a>
+        <a href="founder.html">Founder</a>
+      </div>
       <a class="keep btn primary small" href="/#contact">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </nav>
   </div>
 </header>
 
-<main class="wrap doc">
+<main id="content" class="wrap doc">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 10 October 2026</p>
+  <p class="updated">Last updated 13 November 2026</p>
 
   <p>This policy explains how PediaOS (&ldquo;we&rdquo;, &ldquo;us&rdquo;) handles information on this website, <b>pediaos.com</b>, and in the PediaOS apps.</p>
 
@@ -41,6 +45,8 @@
   <p>Each PediaOS app has its own privacy policy describing exactly what it collects, which is linked inside the app:</p>
   <ul>
     <li><b>Code Blue Companion</b> &mdash; <a href="https://cbc.pediaos.com/privacy.html">cbc.pediaos.com/privacy.html</a></li>
+    <li><b>Pediatric ER Companion</b> &mdash; <a href="https://er.pediaos.com/privacy.html">er.pediaos.com/privacy.html</a></li>
+    <li><b>PALS Companion</b> &mdash; <a href="https://pals.pediaos.com/privacy.html">pals.pediaos.com/privacy.html</a></li>
   </ul>
   <p>In summary, our apps are professional tools for clinicians. They are designed <b>not</b> to collect patient-identifying information. Where an app offers accounts, it stores only what is needed to sign in and to save the user&rsquo;s own records, using Google Firebase as our data processor.</p>
 
@@ -80,6 +86,7 @@
   </div>
 </footer>
 
+<script src="site.js" defer></script>
 <script src="counter.js" defer></script>
 </body>
 </html>
