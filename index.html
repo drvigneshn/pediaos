@@ -35,10 +35,12 @@
   .hero .phone{justify-self:center; width:min(250px, 64vw); height:auto; border-radius:28px; border:8px solid #0b1220; box-shadow:0 24px 60px rgba(15,27,45,.28); transform:rotate(-3deg);}
   @media (max-width:860px){ .hero{grid-template-columns:1fr; padding:32px 20px; margin-top:16px;} .hero .phone{transform:none; width:min(220px,60vw);} }
 
-  .trust{display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; margin-top:56px;}
-  .trust div{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:16px 18px; font-size:14px; color:var(--dim);}
-  .trust b{display:block; color:var(--ink); font-size:15px;}
-  @media (max-width:760px){ .trust{grid-template-columns:1fr 1fr;} }
+  /* Facts strip: one ruled row, no boxes — the product cards below are the only boxed things. */
+  .trust{display:grid; grid-template-columns:repeat(4, 1fr); margin-top:28px; border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .trust div{padding:18px 20px; font-size:14px; color:var(--dim); border-left:1px solid var(--line);}
+  .trust div:first-child{border-left:0; padding-left:0;}
+  .trust b{display:block; color:var(--ink); font-size:15px; font-family:Sora,Arial,sans-serif; letter-spacing:-.01em;}
+  @media (max-width:760px){ .trust{grid-template-columns:1fr 1fr;} .trust div{padding:14px 12px;} .trust div:nth-child(odd){border-left:0; padding-left:0;} .trust div:nth-child(n+3){border-top:1px solid var(--line);} }
 
   .about{display:grid; grid-template-columns:1.2fr .8fr; gap:32px; align-items:start;}
   .about .prose p{font-size:16.5px;}
@@ -51,11 +53,16 @@
   .founder p{font-size:14.5px; color:var(--dim);}
   @media (max-width:860px){ .about{grid-template-columns:1fr;} }
 
-  .org{margin-top:16px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;}
-  .org div{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-sm); padding:14px 16px;}
+  .org{margin-top:28px; display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; border-top:1px solid var(--line); padding-top:18px;}
+  .org div{padding:0;}
   .org small{display:block; font-size:12px; color:var(--dim); text-transform:uppercase; letter-spacing:.06em; font-weight:600;}
   .org span{font-size:14.5px; font-weight:500;}
   @media (max-width:760px){ .org{grid-template-columns:1fr 1fr;} }
+  /* Approach: plain columns, not cards */
+  #approach .card{background:none; border:0; padding:0;}
+  #approach .grid3{gap:32px;}
+  #contact .band{grid-template-columns:1.4fr 1fr;}
+  @media (max-width:900px){ #contact .band{grid-template-columns:1fr;} }
 </style>
 </head>
 <body>
@@ -246,11 +253,10 @@
     <div class="band">
       <div>
         <h2>Contact us</h2>
-        <p>For institutional licences, partnerships, support, or privacy requests, write to us.</p>
+        <p>Institutional licences, partnerships, support or privacy requests &mdash; one address for all of them.</p>
       </div>
       <div class="actions">
         <a class="big" href="mailto:contact@pediaos.com"><span><small>Email</small>contact@pediaos.com</span><span>&rarr;</span></a>
-        <a class="big" href="https://cbc.pediaos.com"><span><small>Product</small>Code Blue Companion</span><span>&#8599;</span></a>
       </div>
     </div>
   </section>
