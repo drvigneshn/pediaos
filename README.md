@@ -4,6 +4,9 @@ Website of **PediaOS** — pediatric health-care technology.
 Static HTML, no build step. Served by GitHub Pages from `main` (root) at https://pediaos.com.
 
 - `index.html` — company home (products, approach, for hospitals, about, contact)
+- `code-blue-companion.html`, `er-companion.html`, `pals-companion.html`, `auscultation-simulator.html` —
+  one page per product (same template: summary, screenshots, what it does, who it is for, safety note).
+  The home page lists them as a short index; update both when a product changes.
 - `founder.html` — brief founder profile (Dr Vignesh N)
 - `privacy.html`, `terms.html` — website/company privacy policy and terms of use
 - `styles.css` — shared styles (light/dark tokens). Coloured *text* uses `--accent-text` / `--teal-text`

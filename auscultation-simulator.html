@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Auscultation Simulator — PediaOS</title>
+<meta name="description" content="An interactive simulator for learning heart and breath sounds in children.">
+<link rel="canonical" href="https://pediaos.com/auscultation-simulator.html">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#13294b">
+<meta property="og:title" content="Auscultation Simulator — PediaOS">
+<meta property="og:description" content="An interactive simulator for learning heart and breath sounds in children.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#content">Skip to content</a>
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="PediaOS home"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b></a>
+    <nav aria-label="Main">
+      <div class="navlinks" id="navlinks">
+        <a href="/#products" aria-current="true">Products</a>
+        <a href="/#hospitals">For hospitals</a>
+        <a href="/#about">About</a>
+        <a href="founder.html">Founder</a>
+      </div>
+      <a class="keep btn primary small" href="/#contact">Contact</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="navlinks" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </nav>
+  </div>
+</header>
+
+<main id="content" class="wrap">
+  <p class="crumb"><a href="/#products">&larr; All products</a></p>
+  <div class="phero">
+    <div class="ptitle"><span class="vicon" style="--vc:var(--violet);--vs:var(--violet-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v5a4 4 0 0 0 8 0V3"/><path d="M9 12v3a5 5 0 0 0 10 0v-1"/><circle cx="19" cy="11" r="2.5"/></svg></span><div><span class="status soon">Coming soon</span><div class="url">clinical.pediaos.com</div></div></div>
+    <h1>Auscultation Simulator</h1>
+    <p class="lead">An interactive auscultation simulator for learning to recognise heart and breath sounds in children. It is in development; this page will be updated when it opens.</p>
+      <div class="ctas"><a class="btn ghost" href="/#contact">Ask to be told when it opens</a></div>
+  </div>
+
+  <section class="psec">
+    <h2>What it does</h2>
+    <div class="flist">
+      <div><h3>Interactive patient</h3><p>Listen at different positions on the chest.</p></div>
+      <div><h3>Normal and abnormal sounds</h3><p>Practise telling them apart.</p></div>
+      <div><h3>For teaching</h3><p>Bedside teaching, self-study and skills sessions.</p></div>
+    </div>
+  </section>
+
+  <section class="psec">
+    <div class="pfacts">
+      <div><small>For</small><span>Medical students, residents and nurses.</span></div>
+    </div>
+    <p class="note">For education only, not for use with real patients.</p>
+  </section>
+
+  <section class="psec">
+    <h2>More from PediaOS</h2>
+    <div class="plinks">
+      <a class="plink" href="code-blue-companion.html"><img src="img/cbc-icon.svg" alt="" width="52" height="52"><span><b>Code Blue Companion</b><small>Pediatric resuscitation console: weight-based doses, arrest timers and voice prompts.</small></span><span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a class="plink" href="er-companion.html"><span class="vicon" style="--vc:var(--accent);--vs:var(--accent-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span><span><b>Pediatric ER Companion</b><small>Weight-based emergency protocols, a drug library and clinical scores for the pediatric ER.</small></span><span class="arr" aria-hidden="true">&rarr;</span></a>
+      <a class="plink" href="pals-companion.html"><span class="vicon" style="--vc:var(--teal);--vs:var(--teal-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M5 11h3l2-4 3 7 2-3h4"/><path d="M8 21h8M12 17v4"/></svg></span><span><b>PALS Companion</b><small>A simulated bedside monitor for resuscitation teaching, run live from the instructor&rsquo;s phone.</small></span><span class="arr" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fbrand"><img src="icon.svg" alt=""><b>Pedia<span>OS</span></b>&nbsp;&middot; Pediatric health-care technology</div>
+    <div class="links">
+      <a href="/#products">Products</a>
+      <a href="founder.html">Founder</a>
+      <a href="/#contact">Contact</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+    </div>
+    <p>&copy; 2026 PediaOS. All rights reserved.</p>
+    <p class="visits" id="visits" hidden></p>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+<script src="counter.js" defer></script>
+</body>
+</html>
