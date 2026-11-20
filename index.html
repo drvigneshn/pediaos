@@ -21,10 +21,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"PediaOS","url":"https://pediaos.com/","logo":"https://pediaos.com/icon.svg",
+{"@context":"https://schema.org","@type":"Organization","name":"PediaOS","legalName":"PEDIAOS","url":"https://pediaos.com/","logo":"https://pediaos.com/icon.svg",
  "description":"Pediatric health-care technology: clinical decision-support and training software for pediatric emergency and critical care.",
  "foundingDate":"2026","founder":{"@type":"Person","name":"Dr Vignesh N","jobTitle":"Pediatrician","url":"https://pediaos.com/founder.html"},
- "address":{"@type":"PostalAddress","addressRegion":"Tamil Nadu","addressCountry":"IN"},
+ "address":{"@type":"PostalAddress","streetAddress":"74/25 F5, Brindavan Apartments, Theradi Pillaiyar Koil Street","addressLocality":"Chidambaram","addressRegion":"Tamil Nadu","postalCode":"608001","addressCountry":"IN"},
  "email":"contact@pediaos.com"}
 </script>
 <style>
@@ -57,6 +57,7 @@
   .org div{padding:0;}
   .org small{display:block; font-size:12px; color:var(--dim); text-transform:uppercase; letter-spacing:.06em; font-weight:600;}
   .org span{font-size:14.5px; font-weight:500;}
+  .org .addr{grid-column:1 / -1;}
   @media (max-width:760px){ .org{grid-template-columns:1fr 1fr;} }
   /* Approach: plain columns, not cards */
   #approach .card{background:none; border:0; padding:0;}
@@ -156,7 +157,7 @@
     <div class="sec-head"><span class="kicker">About PediaOS</span><h2>Clinician-built technology for children&rsquo;s health</h2></div>
     <div class="about">
       <div class="prose">
-        <p>PediaOS is a pediatric health-care technology venture based in Tamil Nadu, India. We design clinical decision-support and training software for the people who care for acutely ill children &mdash; pediatricians, emergency physicians, residents and nurses.</p>
+        <p>PediaOS is a pediatric health-care technology business based in Chidambaram, Tamil Nadu, India. We design clinical decision-support and training software for the people who care for acutely ill children &mdash; pediatricians, emergency physicians, residents and nurses.</p>
         <p>PediaOS began in 2026 with Code Blue Companion, built from first-hand experience of pediatric resuscitation: in the first minutes of an arrest, too much depends on memory and mental arithmetic. Our tools take that load off the team, so they can focus on the child.</p>
         <p>Code Blue Companion won the <b>Medshark Champion Award (Best Pitch)</b> at the ANBAI National Conclave 2026, Bengaluru.</p>
       </div>
@@ -169,13 +170,13 @@
         <a class="btn ghost small" href="founder.html">About the founder &rarr;</a>
       </aside>
     </div>
-    <!-- Organisation details: once registered, add the legal name exactly as on the Udyam / D-U-N-S records,
-         the registered address and a business phone number below, and keep them identical everywhere. -->
+    <!-- Organisation details: legal name and address exactly as on the D-U-N-S record. Keep them identical
+         here, in privacy.html and terms.html, and in the Google Payments profile. -->
     <div class="org">
-      <div><small>Organisation</small><span>PediaOS</span></div>
+      <div><small>Legal name</small><span>PEDIAOS</span></div>
       <div><small>Sector</small><span>Health-care technology (software)</span></div>
       <div><small>Founder</small><span>Dr Vignesh N</span></div>
-      <div><small>Location</small><span>Tamil Nadu, India</span></div>
+      <div class="addr"><small>Registered address</small><span>74/25 F5, Brindavan Apartments, Theradi Pillaiyar Koil Street, Chidambaram, Cuddalore, Tamil Nadu 608001, India</span></div>
     </div>
   </section>
 
