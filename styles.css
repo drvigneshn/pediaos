@@ -3,7 +3,7 @@
   --bg:#f4f6fa; --surface:#ffffff; --surface2:#eef1f7; --line:#dde3ee;
   --ink:#0f1b2d; --dim:#586579; --brand:#13294b; --brand-ink:#ffffff;
   --accent:#e5603f; --accent-text:#b43a1c; --accent-soft:#fde8e1; --teal:#0f8a8f; --teal-text:#0a6b70; --teal-soft:#dcf1f1;
-  --violet:#5b4bd6; --violet-soft:#ebe8fd; --gold:#a8720c; --gold-soft:#f6ecd6;
+  --violet:#5b4bd6; --violet-soft:#ebe8fd; --gold:#a8720c; --gold-text:#7d5409; --gold-soft:#f6ecd6;
   --grid:rgba(19,41,75,.06); --band:#13294b; --band-ink:#ffffff;
   --shadow:0 1px 2px rgba(15,27,45,.05), 0 10px 30px rgba(15,27,45,.07);
   --r:14px; --r-sm:10px;
@@ -13,7 +13,7 @@
     --bg:#0a1220; --surface:#111c2e; --surface2:#17243a; --line:#24344f;
     --ink:#e9eef6; --dim:#97a6bd; --brand:#9bbcff; --brand-ink:#0a1220;
     --accent:#ff8a6b; --accent-text:#ff8a6b; --accent-soft:#3a2118; --teal:#4cc7cb; --teal-text:#4cc7cb; --teal-soft:#123338;
-    --violet:#a99cff; --violet-soft:#241f48; --gold:#e6b04a; --gold-soft:#33280f;
+    --violet:#a99cff; --violet-soft:#241f48; --gold:#e6b04a; --gold-text:#e6b04a; --gold-soft:#33280f;
     --grid:rgba(155,188,255,.06); --band:#16294a; --band-ink:#e9eef6;
     --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
   }
@@ -22,7 +22,7 @@
   --bg:#0a1220; --surface:#111c2e; --surface2:#17243a; --line:#24344f;
   --ink:#e9eef6; --dim:#97a6bd; --brand:#9bbcff; --brand-ink:#0a1220;
   --accent:#ff8a6b; --accent-text:#ff8a6b; --accent-soft:#3a2118; --teal:#4cc7cb; --teal-text:#4cc7cb; --teal-soft:#123338;
-  --violet:#a99cff; --violet-soft:#241f48; --gold:#e6b04a; --gold-soft:#33280f;
+  --violet:#a99cff; --violet-soft:#241f48; --gold:#e6b04a; --gold-text:#e6b04a; --gold-soft:#33280f;
   --grid:rgba(155,188,255,.06); --band:#16294a; --band-ink:#e9eef6;
   --shadow:0 1px 2px rgba(0,0,0,.3), 0 10px 30px rgba(0,0,0,.35);
 }
@@ -137,6 +137,7 @@ section{padding:80px 0 8px;}
 .status{display:inline-block; font-size:11.5px; font-weight:600; border-radius:6px; padding:2px 8px; margin-right:6px; font-family:'IBM Plex Sans',sans-serif; letter-spacing:0;}
 .status.live{color:var(--teal-text); background:var(--teal-soft);}
 .status.soon{color:var(--violet); background:var(--violet-soft);}
+.status.beta{color:var(--gold-text); background:var(--gold-soft);}
 .venture p.desc{margin-top:14px; color:var(--dim); font-size:15px;}
 .venture ul{list-style:none; margin-top:14px; display:grid; gap:8px; font-size:14.5px;}
 .venture li{display:flex; gap:10px; align-items:flex-start;}

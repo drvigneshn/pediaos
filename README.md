@@ -4,7 +4,7 @@ Website of **PediaOS** — pediatric health-care technology.
 Static HTML, no build step. Served by GitHub Pages from `main` (root) at https://pediaos.com.
 
 - `index.html` — company home (products, approach, for hospitals, about, contact)
-- `code-blue-companion.html`, `er-companion.html`, `pals-companion.html`, `auscultation-simulator.html` —
+- `code-blue-companion.html`, `er-companion.html`, `pals-companion.html`, `carb-companion.html`, `auscultation-simulator.html` —
   one page per product (same template: summary, screenshots, what it does, who it is for, safety note).
   The home page lists them as a short index; update both when a product changes.
 - `founder.html` — brief founder profile (Dr Vignesh N)
@@ -15,7 +15,7 @@ Static HTML, no build step. Served by GitHub Pages from `main` (root) at https:/
 - `404.html`, `icon.svg`, `img/`, `CNAME` (`pediaos.com`)
 
 Products live on subdomains: Code Blue Companion (cbc.pediaos.com, repo `drvigneshn/cbc`),
-Pediatric ER Companion (er.pediaos.com, `drvigneshn/er`), PALS Companion (pals.pediaos.com, `drvigneshn/pals`);
+Pediatric ER Companion (er.pediaos.com, `drvigneshn/er`), PALS Companion (pals.pediaos.com, `drvigneshn/pals`), Carb Companion (carb.pediaos.com, `drvigneshn/carb`, beta);
 the Auscultation Simulator (clinical.pediaos.com) is in development.
 
 The company site deliberately uses its own look (Sora + IBM Plex Sans, cool palette) so it reads as
